@@ -11,10 +11,10 @@ class ProductsServices {
     const limit = 100;
     for (let i = 0; i < limit; i++) {
       this.products.push({
-        id: faker.datatype.uuid(),
+        id: faker.string.uuid(),
         name: faker.commerce.productName(),
         price: parseInt(faker.commerce.price(), 10),
-        image: faker.image.imageUrl(),
+        image: faker.image.url(),
         isBlock: faker.datatype.boolean()
       })
 

@@ -12,7 +12,6 @@ function errorHandler(err, req, res, next) {
   })
 }
 
-
 function boomErrorHandler(err, req, res, next) {
   if (err.isBoom) {
     const {output} = err;
